@@ -14,10 +14,8 @@ function crimsonban(user,reason){
 
 //simple responses
 client.on('message', message => {
-    if (message.content.includes(' ping ')) {
+    if (message.content.includes('ping')) {
     	message.channel.send('pong');
-  	};else if (message.content.includes(' King Crimson ')) {
-    	message.channel.send('IGNORE ME');
   	};
 });
 
