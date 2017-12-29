@@ -6,9 +6,9 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-function crimsonban (banUser, banReason){
+/*function crimsonban (banUser, banReason){
     banUser.ban(banReason)
-    message.channel.send('BEGONE THOT');
+    message.channel.send('BEGONE THOT');*/
 };
 //simple responses
 client.on('message', message => {
@@ -17,13 +17,13 @@ client.on('message', message => {
   	};
 });
 
-client.on('message', message => {
+/*client.on('message', message => {
 //user bans via commands  
  if(message.member.roles.hasPermission("banMembers") ){
      if (message.content === 'King Crimson, erase '){
         crimsonban(message.mentions.members.first(),'decided by moderator');
         };
     };
-};);
+};);*/
           
 client.login(process.env.BOT_TOKEN);
