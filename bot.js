@@ -6,7 +6,7 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-function crimsonban (banUser, banReason){
+new function crimsonban (banUser, banReason){
     banUser.ban(banReason)
     message.channel.send('BEGONE THOT');
 };
