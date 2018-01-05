@@ -6,15 +6,23 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-/*new function crimsonban (banUser, banReason){
+function crimsonban (banUser, banReason){
     banUser.ban(banReason)
     message.channel.send('BEGONE THOT');
-};*/
+};
 //simple responses
 client.on('message', message => {
-    if (message.content.includes('ping')) {
+    /*if (message.content.includes('ping')) {
     	message.channel.send('pong');
-  	};
+  	};*/
+    
+  switch (message.content) {
+    case message.content.includes('ping'):
+      message.channel.send('pong');
+      break;
+    default:
+      
+  
 });
 
 /*client.on('message', message => {
